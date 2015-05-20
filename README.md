@@ -25,7 +25,13 @@ to the require section of your `composer.json` file.
 Usage
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Once the extension is installed, you should configure it as component  :
 
 ```php
-<?= \omgdef\yii\unisender\AutoloadExample::widget(); ?>```
+'uniSender' => [
+    'class' => 'omgdef\yii\unisender\UniSender',
+    'apiKey' => 'api_key',
+],
+```
+
+More info https://github.com/OmgDef/unisender-wrapper
