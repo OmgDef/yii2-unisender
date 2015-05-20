@@ -7,7 +7,7 @@ use omgdef\unisender\UniSenderWrapper;
 
 class UniSender extends Component
 {
-    private $obj;
+    protected $obj;
 
 
     /**
@@ -16,7 +16,12 @@ class UniSender extends Component
     public function __construct($config = [])
     {
         $this->obj = new UniSenderWrapper();
-        parent::__construct($config = []);
+
+        foreach ($config as $name => $value) {
+            $this->obj->$name = $value;
+        }
+
+        $this->init();
     }
 
     /**
