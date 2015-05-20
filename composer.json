@@ -1,0 +1,22 @@
+{
+    "name": "omgdef/yii2-unisender",
+    "description": "Unisender API wrapper for yii2",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","unisender","api"],
+    "license": "BSD-4-Clause",
+    "authors": [
+        {
+            "name": "OmgDef",
+            "email": "omgdef@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+        "omgdef/unisender-wrapper": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "omgdef\\yii\\unisender\\": ""
+        }
+    }
+}
